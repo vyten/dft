@@ -11,6 +11,7 @@ echo <<<EOF
 	<link rel="stylesheet" href="$sUrl/css/tma.css" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<script src="$sUrl/js/tma.js"></script>
 	<title>$title</title>
 </head>
 EOF;

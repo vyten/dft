@@ -14,7 +14,7 @@
 $config['libraries'] = array();
 
 /* auto-loaded scripts */
-$config['scripts'] = array();
+$config['scripts'] = array('cleaners','void');
 
 
 ?>
