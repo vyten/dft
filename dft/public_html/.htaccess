@@ -1,0 +1,37 @@
+###########################################################################
+#  
+# NAME    : .htaccess
+# 
+# AUTHOR  : Urban Bjorken
+# 
+# DATE    : 2017-03-23
+# 
+# 
+# COMMENT : rewriting all requests to the frontcontroller,
+#           index.php, if the target route is not a file or a directory.
+# 
+# VERSION : 0.1
+# 
+###########################################################################
+################################
+# Apache Module mod_rewrite
+################################
+RewriteEngine on
+
+################################
+# Defines a condition under which
+# rewriting will take place
+################################
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+################################
+# Defines rules for the 
+# rewriting engine
+################################
+RewriteRule (.*) index.php/$1 [NC,L]
+
+
+###########################################################################
+# 
+###########################################################################
