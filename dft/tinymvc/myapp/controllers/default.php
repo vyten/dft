@@ -12,6 +12,21 @@ class Default_Controller extends TinyMVC_Controller {
   
 	function index() {
 		self::generate_page();
+	/*
+		$tm = 4;
+		$th = 3;
+		
+		if (!$th == 0) {
+			while ($th > 0) {
+				$tm += 60;
+				--$th;
+			}
+		}
+			echo $th;
+			echo '<br>';
+			echo $tm;
+	*/
+	
 	}
 
 	/**
