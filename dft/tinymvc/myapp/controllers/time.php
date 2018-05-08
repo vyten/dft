@@ -22,10 +22,11 @@ class Time_Controller extends TinyMVC_Controller {
 		$tpl_param['header'] = 'Tid';
 		$tpl_param['frmName'] = 'dft';
 		$tpl_param['frmInput'] = 'inputDistance';
+		$tpl_param['imgFormula'] = 'q_dfx.png';
 		
 		$tpl_header = $this->view->fetch('header_tpl',$tpl_param);
 		$tpl_body = $this->view->fetch('body_frm_tpl',$tpl_param);
-		$tpl_footer = $this->view->fetch('footer_tpl');
+		$tpl_footer = $this->view->fetch('footer_tpl',$tpl_param);
 		
 		$this->view->assign('tplHeader',$tpl_header);
 		$this->view->assign('tplBody',$tpl_body);

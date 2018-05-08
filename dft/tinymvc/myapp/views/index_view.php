@@ -1,4 +1,5 @@
-<?php 
+<?php
+$sUrl = 'http://' . $_SERVER['SERVER_NAME'];
 echo $tplHeader;
 echo $tplBody;
 new_links();
@@ -21,6 +22,9 @@ EOF;
 	
 function new_foot () {
 	echo <<<EOF
+	<div class="w3-margin w3-center">
+        <img src="/img/q_dft.png">
+    </div>
 </body>
 </html>
 EOF;

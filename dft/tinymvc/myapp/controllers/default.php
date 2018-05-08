@@ -35,10 +35,11 @@ class Default_Controller extends TinyMVC_Controller {
 	private function generate_page() {
 		$tpl_param['title'] = 'D F T';
 		$tpl_param['header'] = 'Räkna ut din';
+		$tpl_param['imgFormula'] = 'q_dft.png';
 		
 		$tpl_header = $this->view->fetch('header_tpl',$tpl_param);
 		$tpl_body = $this->view->fetch('body_tpl',$tpl_param);
-		$tpl_footer = $this->view->fetch('footer_tpl');
+		$tpl_footer = $this->view->fetch('footer_tpl',$tpl_param);
 		
 		$this->view->assign('tplHeader',$tpl_header);
 		$this->view->assign('tplBody',$tpl_body);
