@@ -12,4 +12,7 @@ Sidan är för att jag skall prova på php, så det är inte den *snyggaste* kod
 (Distans / Fart) * 60 = Tid
 
 
-Ramverket som jag använt är [tinymvc](http://www.tinymvc.com) som kan laddas ner från [GitHub](https://github.com/mohrt/tinymvc-php)
+Ramverket som jag använt är:
+V2 [codeigniter](https://codeigniter.com)
+~~V1.0 [tinymvc](http://www.tinymvc.com)~~
+ som kan laddas ner från [GitHub](https://github.com/mohrt/tinymvc-php)
