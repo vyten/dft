@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+
+/**
+ * 2018-10-17 Urban Bjorken
+ */
+$config['base_url'] = 'http://b1.skalarit.net/';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +39,11 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+
+/**
+ * 2018-10-17 Urban Bjorken
+ */
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -73,10 +81,10 @@ $config['url_suffix'] = '';
 |
 | This determines which set of language files should be used. Make sure
 | there is an available translation if you intend to use something other
-| than english.
+| than en.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'en';
 
 /*
 |--------------------------------------------------------------------------

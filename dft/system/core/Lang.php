@@ -78,7 +78,7 @@ class CI_Lang {
 	 * Load a language file
 	 *
 	 * @param	mixed	$langfile	Language file name
-	 * @param	string	$idiom		Language name (english, etc.)
+	 * @param	string	$idiom		Language name (en, etc.)
 	 * @param	bool	$return		Whether to return the loaded array of translations
 	 * @param 	bool	$add_suffix	Whether to add suffix to $langfile
 	 * @param 	string	$alt_path	Alternative path to look for the language file
@@ -109,7 +109,7 @@ class CI_Lang {
 		if (empty($idiom) OR ! preg_match('/^[a-z_-]+$/i', $idiom))
 		{
 			$config =& get_config();
-			$idiom = empty($config['language']) ? 'english' : $config['language'];
+			$idiom = empty($config['language']) ? 'en' : $config['language'];
 		}
 
 		if ($return === FALSE && isset($this->is_loaded[$langfile]) && $this->is_loaded[$langfile] === $idiom)
