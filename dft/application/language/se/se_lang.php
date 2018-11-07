@@ -22,7 +22,6 @@ $lang['dsT']              = 'd f Tid';
 $lang['Calculate']        = 'Beräkna';
 $lang['Calculate_your']   = 'Beräkna din';
 $lang['back']             = 'Tillbaka';
-$lang['knot']             = 'knop';
 $lang['hour']             = 'timmar';
 $lang['minute']           = 'minuter';
 $lang['short_hour']       = 'h';
@@ -44,6 +43,7 @@ $lang['short_nautical_miles'] = 'nm';
  */
 $lang['Speed']     = 'Fart';
 $lang['Est_speed'] = 'Beräknad fart';
+$lang['knot']             = 'knop';
 
 /**
  * Time

@@ -34,8 +34,8 @@ Class Calculate {
         return $tm;
     }
 
-    /*
-    public function minute_to_hour($time) {
+
+    public function minute_to_hour($time,$h,$m) {
         $hour = 0;
         $minute = $time;
 
@@ -45,10 +45,10 @@ Class Calculate {
                 ++$hour;
             }
         }
-        $result = $hour. ' h ' . $minute. ' minuter';
+        $result = $hour . ' ' . $h . ' ' . $minute. ' ' . $m;
         return $result;
     }
-    */
+
 
 }
 

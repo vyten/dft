@@ -114,24 +114,19 @@ Class Distance_Controller extends CI_Controller {
             $value_time =  $this->calculate->hour_to_minute($formData['inputHour'], $formData['inputMinute']);
             $result = round(($value_speed * $value_time) / 60, 1);;
 
-            //echo $result;
             self::generate_page($result, $formData['inputSpeed'], $formData['inputHour'], $formData['inputMinute']);
         }
-
-
     }
 
     /**
-     * @param $ve
+     * @param $rtu
      * @param $is
      * @param $ih
      * @param $im
      */
-    private function generate_page($ve, $is, $ih, $im) {
+    private function generate_page($rtu, $is, $ih, $im) {
         $data['frmName'] = 'dft';
         $data['frmInput'] = 'inputSpeed';
-
-        //$this->lang->load(get_cookie('dft_lang'),get_cookie('dft_lang'));
 
         $data['sUrl'] = 'http://' . $_SERVER['SERVER_NAME'];
         $data['title'] = $this->lang->line('Dst');
@@ -154,8 +149,8 @@ Class Distance_Controller extends CI_Controller {
         /**
          * if missing information
          */
-        if ($ve == TRUE) {
-            $data['ResponseToUser'] = $ve;
+        if ($rtu == TRUE) {
+            $data['ResponseToUser'] = $rtu;
             $data['ValueSpeed'] = $is;
             $data['ValueHour'] = $ih;
             $data['ValueMinute'] = $im;

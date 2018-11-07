@@ -39,7 +39,6 @@ if ($ResponseToUser == TRUE) {
     echo "</div>";
 }
 
-
 /**
  * formatting form
  */
